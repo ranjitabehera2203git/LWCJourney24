@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Get Records from Multiple Object">
+        <template lwc:if={recordResult}>
+            <template for:each={recordResult} for:item="record">
+                <p key={record.result.id}>{record.result.fields.Name.value}</p>
+            </template>
+        </template>
+    </lightning-card>    
+</template>

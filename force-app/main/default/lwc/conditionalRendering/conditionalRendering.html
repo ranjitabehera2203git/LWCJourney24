@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Conditional Rendering">
+        <div class="slds-var-p-around_large">
+            <lightning-input label="Click Me" type="checkbox" onchange={changeHandler}>
+            </lightning-input>
+        </div>
+        <div class="slds-var-p-around_large">
+            <template lwc:if={displayMessage}>
+                <p>Welcome To Bangalore</p>
+            </template>
+            <template lwc:else>
+                <p>You are not authorize to see the message</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

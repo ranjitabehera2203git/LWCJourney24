@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Get All PickList Values ">
+        <template lwc:if={accountData}>
+            <div class="slds-var-p-around_large">
+                <template for:each={accountData.Active__c.values} for:item="val">
+                    <p key={val.value}>{val.value}</p>
+                </template>
+            </div>
+            <div class="slds-var-p-around_large">
+                <template for:each={accountData.Rating.values} for:item="val">
+                    <p key={val.value}>{val.value}</p>
+                </template>
+            </div>
+            <div class="slds-var-p-around_large">
+                <template for:each={accountData.SLA__c.values} for:item="val">
+                    <p key={val.value}>{val.value}</p>
+                </template>
+            </div>
+        </template>       
+    </lightning-card>    
+</template>

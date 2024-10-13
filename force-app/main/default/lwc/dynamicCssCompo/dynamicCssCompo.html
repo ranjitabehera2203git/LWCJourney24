@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Dynamic Css">
+        <div class="slds-var-p-around_large">
+            <p class={dafaultcss}>Welcome To Lightning Web Component</p>
+        </div>
+        <div class="slds-var-p-around_large">
+           <lightning-button  class="slds-var-p-around_large" variant="brand" label="Add Css" name="add" onclick={addclickHandler}></lightning-button>
+           <lightning-button label="Remove Css"  name="rem"  variant="brand" onclick={removeclickHandler}></lightning-button>
+           <lightning-button  class="slds-var-p-around_large"  variant="brand"  name="tog"  label="Toggle Css" onclick={toggleclickHandler}></lightning-button>
+        </div>       
+    </lightning-card>
+    
+</template>

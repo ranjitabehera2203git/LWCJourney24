@@ -1,0 +1,18 @@
+<template>
+     <lightning-card title="Rendering">
+        <template for:each={contactList} for:item="con">
+            <p key={con.id}>{con.firstName} {con.lastName}</p>
+        </template>
+    </lightning-card>   
+    <lightning-card title="Iterator Rendering">
+        <template iterator:it={contactList}>
+            <div key={it.value.id}>
+                <div lwc:if={it.first} clss="firstclass">
+                </div>
+                <p>{it.value.firstName} {it.value.lastName}</p>
+                <div lwc:if={it.last} clss="lastclass">
+                </div>
+            </div>           
+        </template>
+    </lightning-card> 
+</template>
