@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Greet Message Channel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This is a Greeting Message Channel.</description>
+    <lightningMessageFields>
+        <fieldName>greetMsg</fieldName>
+        <description>This is the greeting msg</description>
+    </lightningMessageFields>   
+</LightningMessageChannel>
